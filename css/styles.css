@@ -13,8 +13,16 @@ font-family: 'Oxygen', sans-serif;
 	float: right;
 }
 
-.navbar-collapse {
-	
+
+.icons {
+	color: #61122f;
+}
+
+.nav-item {
+	text-align: center;
+}
+.nav-item div {
+	font-size: 15px;w
 }
 
 .navbar-brand {
@@ -30,6 +38,11 @@ font-family: 'Oxygen', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
+
+}
+
+a.nav-item:hover {
+	background-color: #e7e7e7;
 
 }
 
