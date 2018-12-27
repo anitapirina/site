@@ -5,7 +5,7 @@ color: #fff;
 font-family: 'Oxygen', sans-serif;
 }
 
-.logo {
+.logo { /*главный логотип*/
 	background: url(../images/restaurant-logo.png) no-repeat;
 	width: 150px;
 	height: 150px;
@@ -13,22 +13,19 @@ font-family: 'Oxygen', sans-serif;
 	float: right;
 }
 
-
-.icons {
+.icons { /*иконки меню*/
 	color: #61122f;
+	margin-right: 5px;
 }
 
-.nav-item {
+
+.nav-item { /*меню*/
 	text-align: center;
-}
-.nav-item div {
-	font-size: 15px;w
+	padding-bottom: 0;
+	font-size: 1.2em;
 }
 
-.navbar-brand {
-	padding-top: 25px;
-}
-.navbar-brand h1 {
+.navbar-brand h1 { /*название ресторана*/
 	font-family: 'Lora', serif;
 	color: #557c3e;
 	font-size: 1.5em;
@@ -38,24 +35,131 @@ font-family: 'Oxygen', sans-serif;
 	margin-top: 0;
 	margin-bottom: 0;
 	line-height: .75;
-
 }
 
 a.nav-item:hover {
-	background-color: #e7e7e7;
+	background-color: #e7e7e7; /*подсветка иконок*/
 
 }
-
 .navbar-brand a:hover, .navbar-brand a:focus {
 	text-decoration: none;
 } 
-
-.navbar-brand div {
+.navbar-brand div { /*kosher certified*/
 	color: #000;
 	text-transform: uppercase;
 	font-size: .7em;
 	margin-top: 15px;
 }
-.navbar-brand div span {
+.navbar-brand div span { 
 	vertical-align: middle;
 }
+
+.navbar-toggler-icon {/*иконка переключателя*/
+	border: #61122f 1px solid;
+	border-radius: 2px 2px 2px 2px;
+}
+.btn-secondary {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/*end header*/
+
+.conteiner .jumbotron {
+		box-shadow: 0 0 50px #3F0C1F;
+		border: 2px #3F0C1F solid;
+		box-sizing: border-box;
+		text-align: center;
+		padding: 0;
+	}
+.row {
+	margin-right: 0;
+	margin-left: 0;
+}
+
+#menu-tile, #specials-tile, #map-tile { 
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px #3F0C1F solid;
+}
+
+#menu-tile, #specials-tile {
+	width: 360px;
+	margin: 0 auto 15px;
+}
+
+#menu-tile:hover, #specials-tile:hover, #map-tile:hover {/*подсветка*/
+	box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+#menu-tile {
+	background: url(../images/menu-tile.jpg) no-repeat;
+	background-position: center;
+}
+
+#specials-tile {
+	background: url(../images/specials-tile.jpg) no-repeat;
+	background-position: center;
+}
+#menu-tile span, #specials-tile span, #map-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	text-transform: uppercase;
+	background-color: #000;
+	opacity: 0.7;
+	color: #fff;
+}
+
+/* Extra Large devices*/
+@media (min-width: 1200px) {
+	.conteiner .jumbotron {
+		background: url("../images/jumbotron_1200.jpg") no-repeat;
+		height: 675px;
+		background-size: cover;
+		margin: 20px;
+	}
+}
+/*Large devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+	.conteiner .jumbotron {
+		background: url("../images/jumbotron_992.jpg") no-repeat;
+		height: 558px;
+		background-size: cover;
+		margin: 20px;
+	}
+	.logo { /*главный логотип*/
+	background: url(../images/restaurant-logo_medium.png) no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+	float: right;
+}
+}
+/*Medium devices*/
+@media (min-width:768px) and (max-width: 991px) {
+	.conteiner .jumbotron {
+		background: url("../images/jumbotron_768.jpg") no-repeat;
+		height: 432px;
+		background-size: cover;
+		margin: 20px;
+	}
+}
+
+@media (max-width: 767px){
+	.navbar-brand h1 { /*название ресторана*/
+	font-size: 1.2em;
+}
+}
+
+@media (max-width: 479px) {
+	#menu-tile, #specials-tile{
+		width: 280px;
+		margin: 0 auto 15px;
+	}
+}
+
