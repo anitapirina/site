@@ -105,6 +105,40 @@ a.nav-item:hover { /*подсветка иконок*/
 	opacity: 0.7;
 	color: #fff;
 }
+/*menu categories*/
+#menu-categories-title {
+	font-size: 2em;
+	margin: 20px;
+}
+#menu-categories-title + div {
+	margin-bottom: 50px;
+}
+.category-tile {
+	margin: 0 auto 15px;
+	position: relative;
+	width: 200px;
+	height: 200px;
+	overflow: hidden;
+	border: 2px #3F0C1F solid;
+}
+
+
+.category-tile span {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	background-color: #000;
+	opacity: 0.7;
+	color: #fff;
+}
+.category-tile:hover {/*подсветка*/
+	box-shadow: 0 1px 5px 1px #CCCCCC;
+}
+/*end of menu categories*/
 /*end of main content*/
 /*Footer*/
 .panel-footer {
@@ -183,10 +217,20 @@ a.nav-item:hover { /*подсветка иконок*/
 	}
 	.navbar-brand h1 { /*название ресторана*/
 	font-size: 1em;
-}
-#hours, #address, #testimonials {
+	}
+	#hours, #address, #testimonials {
 	text-align: center;  
-}
+	}
+	.col-xxs-12 {
+		position: relative;
+	  width: 100%;
+	  min-height: 1px;
+	  padding-right: 15px;
+	  padding-left: 15px;
+	  -ms-flex: 0 0 100%;
+  		flex: 0 0 100%;
+  		max-width: 100%;
+	}
 }
 
 
