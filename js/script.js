@@ -8,7 +8,7 @@ $(function () {
 });
 
 function () {
-	var dc={};
+	
 	var homedata = "snipets/main-content.html";
 
 	// var insertHTML = function (selector, html) {
