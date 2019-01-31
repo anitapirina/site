@@ -11,15 +11,15 @@ $(function () {
 	var dc={};
 	var homedata = "snipets/main-content.html";
 
-	var insertHTML = function (selector, html) {
-		var targetElem = document.querySelector(selector);
-		targetElem.innerHTML = html;
-	};
+	// var insertHTML = function (selector, html) {
+	// 	var targetElem = document.querySelector(selector);
+	// 	targetElem.innerHTML = html;
+	// };
 
-	var showLoading = function(selector){
-		var html = "<div class='text-center'></div>";
-		insertHTML (selector, html);
-	}
+	// var showLoading = function(selector){
+	// 	var html = "<div class='text-center'></div>";
+	// 	insertHTML (selector, html);
+	// }
 
 	document.addEventListener("DOMContentLoaded", function (event){
 		$ajaxUtils.sendGetRequest(
