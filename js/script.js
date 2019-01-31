@@ -7,7 +7,7 @@ $(function () {
 	});
 });
 
-(function (global) {
+function () {
 	var dc={};
 	var homedata = "snipets/main-content.html";
 
@@ -29,6 +29,6 @@ $(function () {
 		}, 
 			false);
 	});
-	global.$dc = dc;
+	
 
-}) (window);
+};
