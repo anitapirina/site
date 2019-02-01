@@ -14,10 +14,10 @@ $(function () {
 	var categoriesTitle = "snipets/menu-snipet.html";
 	var categoriesHtml = "snipets/categories-snipet.html";
 
-	// var insertHTML = function (selector, html) {
-	// 	var targetElem = document.querySelector(selector);
-	// 	targetElem.innerHTML = html;
-	// };
+	var insertHTML = function (selector, html) {
+	var targetElem = document.querySelector(selector);
+	targetElem.innerHTML = html;
+	};
 
 	// var showLoading = function(selector){
 	// 	var html = "<div class='text-center'></div>";
