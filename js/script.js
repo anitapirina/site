@@ -19,10 +19,10 @@ $(function () {
 	targetElem.innerHTML = html;
 	};
 
-	// var showLoading = function(selector){
-	// 	var html = "<div class='text-center'></div>";
-	// 	insertHTML (selector, html);
-	// }
+	var showLoading = function(selector){
+	var html = "<div class='text-center'></div>";
+	insertHTML (selector, html);
+	}
 
 	var insertProperty = function (string, propName, propValue) {
 		var propToReplace = "{{" + propName + "}}";
