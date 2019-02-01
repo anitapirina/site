@@ -10,7 +10,7 @@ $(function () {
 (function (global) {
 	var dc={};
 	var homedata = "snipets/main-content.html";
-	var allCategoriesUrl = "http://davids-restaurant.herokuapp.com/categories.json";
+	var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
 	var categoriesTitle = "snipets/menu-snipet.html";
 	var categoriesHtml = "snipets/categories-snipet.html";
 
