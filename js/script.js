@@ -41,13 +41,13 @@ $(function () {
 	});
 
 	dc.loadMenuCategories = function (){
-		showLoading(selector,html);
+		showLoading(".main-content");
 		$ajaxUtils.sendGetRequest(
 			allCategoriesUrl, buildAndShowCategories);
 	};
 
 	function buildAndShowCategories(categories) {
-		showLoading(selector,html);
+		showLoading(".main-content");
 		$ajaxUtils.sendGetRequest(
 			categoriesTitle, function (categoriesTitle) {
 				$ajaxUtils.sendGetRequest (
