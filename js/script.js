@@ -20,7 +20,8 @@ $(function () {
 	};
 
 	var showLoading = function(selector){
-	var html = "<div class='text-center'></div>";
+	var html = "<div class='text-center'>"
+	html += "<img src ='images/ajax-loader.gif'></div>";
 	insertHTML (selector, html);
 	}
 
@@ -40,11 +41,13 @@ $(function () {
 	});
 
 	dc.loadMenuCategories = function (){
+		showLoading(selector,html);
 		$ajaxUtils.sendGetRequest(
 			allCategoriesUrl, buildAndShowCategories);
 	};
 
 	function buildAndShowCategories(categories) {
+		showLoading(selector,html);
 		$ajaxUtils.sendGetRequest(
 			categoriesTitle, function (categoriesTitle) {
 				$ajaxUtils.sendGetRequest (
