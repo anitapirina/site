@@ -59,7 +59,7 @@ $(function () {
 	}
 	function buildCategories(categories, categoriesTitle, categoriesHtml) {
 		var finalHtml = categoriesTitle;
-		finalHtml+="<section class='row>'";
+		finalHtml+="<section class='row'>";
 
 		for (var i = 0; i<categories.length; i++) {
 			var html = categoriesHtml;
