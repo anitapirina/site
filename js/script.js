@@ -53,7 +53,7 @@ $(function () {
 				$ajaxUtils.sendGetRequest (
 					categoriesHtml, function (categoriesHtml) {
 						var categoriesView = buildCategories( categories, categoriesTitle, categoriesHtml);
-						insertHTML("#main-content", categoriesView);
+						insertHTML(".main-content", categoriesView);
 					}, false);
 			}, false);
 	}
