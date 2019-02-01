@@ -66,7 +66,7 @@ $(function () {
 			var name = "" + categories[i].name;
 			var short_name = categories[i].short_name;
 			html = insertProperty(html, "name", name);
-			html=insertProperty(html, "short_name", short_name);
+			html = insertProperty(html, "short_name", short_name);
 			finalHtml+=html;
 		}
 		finalHtml+="</section>";
