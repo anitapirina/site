@@ -77,9 +77,7 @@ $(function () {
 			var name = "" + categories[i].name;
 			var short_name = categories[i].short_name;
 			html = insertProperty(html, "name", name);
-			alert(html);
 			html = insertProperty(html, "short_name", short_name);
-			alert(html);
 			finalHtml+=html;
 		}
 		finalHtml+="</section>";
