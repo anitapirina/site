@@ -58,7 +58,7 @@ $(function () {
 	};
 
 	//Загрузка блюд в выбранной категорииб shortNameCategort - короткое имя выбранной категории
-	dc.loadMenuItems = function(shortNameCategory){
+	dc.loadMenuItem = function(shortNameCategory){
 		showLoading(".main-content");
 		$ajaxUtils.sendGetRequest(
 			menuItemUrl + shortNameCategory, buildAndShowMenuItems);
