@@ -139,7 +139,7 @@ a.nav-item:hover { /*подсветка иконок*/
 	box-shadow: 0 1px 5px 1px #CCCCCC;
 }
 
-.menu-item-photo img {
+.img-responsive {
 	position: relative;
 }
 .menu-item-photo div {
