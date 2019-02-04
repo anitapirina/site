@@ -107,6 +107,7 @@ $(function () {
 	}
 
 	function buitdItemsView (menuItems, menuItemTitle, menuItemHtml) {
+
 		menuItemTitle=insertProperty(menuItemTitle, "name", menuItems.category.name);
 		menuItemTitle=insertProperty(menuItemTitle, "special_instructions", menuItems.category.special_instructions);
 
@@ -116,14 +117,14 @@ $(function () {
 		var Items = menuItems.menu_items;
 		var catShortName = menuItems.category.short_name;
 
-		for (var i = 0; i<menuItems.length; i++) {
+		for (var i = 0; i<Items.length; i++) {
 			var html = menuItemHtml;
-			html = insertProperty(html, "short_name", menuItems[i].short_name);
+			html = insertProperty(html, "short_name", Items[i].short_name);
 			html = insertProperty(html, "catShortName", catShortName);
-			html = insertPrice(html, "price_small", menuItems[i].price_small);
-			html = insertPortionName(html, "small_portion_name", menuItems[i].small_portion_name);
-			html = insertPrice(html, "price_large", menuItems[i].price_large);
-			html = insertPortionName(html, "large_portion_name", menuItems[i].large_portion_name);
+			html = insertPrice(html, "price_small", Items[i].price_small);
+			html = insertPortionName(html, "small_portion_name", Items[i].small_portion_name);
+			html = insertPrice(html, "price_large", Items[i].price_large);
+			html = insertPortionName(html, "large_portion_name", Items[i].large_portion_name);
 			html = insertProperty(html, "name", name);
 			html = insertProperty(html, "description", description);
 
