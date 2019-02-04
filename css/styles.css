@@ -139,14 +139,26 @@ a.nav-item:hover { /*подсветка иконок*/
 	box-shadow: 0 1px 5px 1px #CCCCCC;
 }
 
-.img-responsive {
-	position: relative;
+.menu-item-photo {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 250px;
 }
 .menu-item-photo div {
-	position: absolute;
-	bottom: 0;
-	right: 0;
-	background-color: 557c3e;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+.menu-item-description {
+  padding-right: 30px;
 }
 /*end of menu categories*/
 /*end of main content*/
