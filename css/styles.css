@@ -138,6 +138,16 @@ a.nav-item:hover { /*подсветка иконок*/
 .category-tile:hover {/*подсветка*/
 	box-shadow: 0 1px 5px 1px #CCCCCC;
 }
+
+.menu-item-photo img {
+	position: relative;
+}
+.menu-item-photo div {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: 557c3e;
+}
 /*end of menu categories*/
 /*end of main content*/
 /*Footer*/
