@@ -135,7 +135,7 @@ $(function () {
 	}
 
 		function insertPrice(html, pricePropName, priceValue){
-			if (!propValue){
+			if (!priceValue){
 				return insertProperty(html, pricePropName, "");
 			}
 			priceValue="$"+priceValue.toFixed(2);
