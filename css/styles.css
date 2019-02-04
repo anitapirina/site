@@ -160,6 +160,13 @@ a.nav-item:hover { /*подсветка иконок*/
 .menu-item-description {
   padding-right: 30px;
 }
+
+.menu-item-price {
+	font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
 /*end of menu categories*/
 /*end of main content*/
 /*Footer*/
