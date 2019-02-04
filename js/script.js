@@ -16,7 +16,7 @@ $(function () {
 	var allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json";
 	var categoriesTitle = "snipets/menu-snipet.html";
 	var categoriesHtml = "snipets/categories-snipet.html";
-	var menuItemUrl = "https://davids-restaurant.herokuapp.com/menu_items.json?categories=";
+	var menuItemUrl = "https://davids-restaurant.herokuapp.com/menu_items.json?category=";
 	var menuItemTitle = "snipets/menu-item-title.html";
 	var menuItemHtml = "snipets/menu-item.html";
 
