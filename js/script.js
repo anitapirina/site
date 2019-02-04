@@ -125,8 +125,8 @@ $(function () {
 			html = insertPortionName(html, "small_portion_name", Items[i].small_portion_name);
 			html = insertPrice(html, "price_large", Items[i].price_large);
 			html = insertPortionName(html, "large_portion_name", Items[i].large_portion_name);
-			html = insertProperty(html, "name", name);
-			html = insertProperty(html, "description", description);
+			html = insertProperty(html, "name", Items[i].name);
+			html = insertProperty(html, "description", Items[i].description);
 
 			finalHtml+=html;
 		}
